@@ -13,3 +13,7 @@ body{
 .web.header{
     background: aquamarine;
 }
+
+.inline{
+    display: inline;
+}

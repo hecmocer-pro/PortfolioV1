@@ -1,0 +1,16 @@
+{
+  "name": "hecmocer.github.io",
+  "description": "personal website",
+  "main": "index.js",
+  "authors": [
+    "hecmocer"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hecmocer/hecmocer.github.io",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6"
+  }
+}

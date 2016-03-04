@@ -1,16 +1,18 @@
 {
-  "name": "hecmocer.github.io",
-  "description": "personal website",
+  "name": "musicababel",
+  "description": "Proyecto HANDS-ON de Front-end Avanzado. Reproductor de música",
   "main": "index.js",
   "authors": [
+    "jorgegvalencia",
     "hecmocer"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/hecmocer/hecmocer.github.io",
+  "homepage": "https://github.com/jorgegvalencia/MusicaBabel",
   "moduleType": [],
   "private": true,
   "dependencies": {
     "jquery": "^2.2.1",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "animate.css": "^3.5.1"
   }
 }

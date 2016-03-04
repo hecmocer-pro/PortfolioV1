@@ -1,19 +1,161 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700italic,700|Bangers|Great+Vibes);
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "bangers";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Rock+Salt);
+.web.header {
+  height: 40px;
+  background: linear-gradient(to left, #fbde81, lightblue);
+  border: solid 1px black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
-
-body{
-    font-family: "Source Sans Pro";
-    padding: 0px;
-    margin: 0px;
+.web.header .logo {
+  color: black;
+  font-size: 21px;
+  border-radius: 5 px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'rock salt';
 }
-
-.web.header{
-    background: aquamarine;
+.web.header .add-button {
+  float: right;
+  margin-top: 3px;
 }
-
-.inline{
-    display: inline;
+.web.header .cancel-button {
+  float: right;
+  margin-top: 4px;
+}
+.web.player {
+  bottom: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  border: solid 2px black;
+  background: linear-gradient(to left, #fbde81, lightblue);
+}
+.web.player .audio-player-container {
+  margin-top: 4px;
+}
+.web.player .audio-player-container .audio-player {
+  display: block;
+  margin: 0 auto;
+}
+body {
+  background-image: url('../images/tocadiscos.jpg');
+  background-attachment: fixed;
+}
+h2 {
+  text-shadow: 1px 1px 1px #BBBBBB, 3px 3px 9px #FFFFFF;
+}
+.music.item.list {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.music.item.list .music.item {
+  transition: 500ms;
+  background: linear-gradient(to left top, #ffdb99, lightblue);
+  border: azure solid px;
+  margin: 5px;
+  border-radius: 5px;
+  margin-top: -1px;
+  padding-top: 10px;
+  font-family: 'Source Sans Pro';
+}
+.music.item.list .music.item ul {
+  list-style-type: none;
+}
+.music.item.list .music.item ul span {
+  padding: 0px 3px;
+}
+.music.item.list .music.item:hover {
+  opacity: 0.9;
+}
+.music.item.list .music.item .control-buttons {
+  float: right;
+  margin-right: -42px;
+  padding-top: 3px;
+}
+.music.item.list .music.item .control-buttons .play-button,
+.music.item.list .music.item .control-buttons .pause-button {
+  margin: 0px 3px;
+}
+.music.item.list .music.item .control-buttons .pause-button {
+  background-color: #F38630;
+  border-color: #F38630;
+}
+.music.item.list .music.item .other-button {
+  margin-top: 2px;
+}
+.music.item.list .currentEditing {
+  background: #f59a52;
+}
+.music.item.list .playingIndicator {
+  float: right;
+  margin-top: 11px;
+  font-size: 20px;
+}
+.loading .loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+body {
+  overflow-y: scroll;
+}
+button:disabled {
+  visibility: hidden;
+}
+.form {
+  padding: 10px;
+  background: radial-gradient(#ffb733 2%, lightblue);
+  background-color: #a1f5f5;
+}
+.form .form-field {
+  padding-top: 10px;
+  padding-right: 0px;
+}
+.form .form-field .descripcion {
+  text-align: right;
+  display: block;
+  padding-top: 5px;
+}
+.form .save-button {
+  padding-top: 10px;
+}
+.form .save-button button {
+  border: black solid 1px;
+}
+.web.player .playButtonFooter {
+  display: block;
+  float: right;
+  margin-top: 2px;
+}
+.web.player .trackControl {
+  float: left;
+  margin-top: 2px;
+}
+.web.player .timelineFooter {
+  height: 15px;
+  background: white;
+  border: solid 1px;
+  border-radius: 15px 0 0 15px;
+  margin-top: 5px;
+}
+.web.player .timelineFooter .playhead {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  margin-top: -15px;
+}
+.web.player .timelineFooter .timelineFooterExtra {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: solid 1px;
+  border-left-width: 0;
+  border-radius: 0 50% 50% 0;
+  margin-left: 100%;
+  margin-top: -1px;
 }

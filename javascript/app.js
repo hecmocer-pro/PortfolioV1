@@ -22,7 +22,7 @@ function loadSongs() {
 
             if(data.length <= 0){
                 html = "<h2 class='animated zoomInDown'> Añade tus canciones </h2>";
-            } 
+            }
             else{
                 html = "<h2> Tus canciones </h2>";
             }
@@ -61,7 +61,7 @@ function loadSongs() {
             console.log(songsIndex);
         },
         error: function() {
-            $("#listadoCanciones").html("Error al cargar las canciones");
+            //$("#listadoCanciones").html("Error al cargar las canciones");
         }
     });
 }

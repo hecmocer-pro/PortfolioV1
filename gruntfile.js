@@ -1,20 +1,27 @@
-module.exports = function(grunt) {
+// exportar grunt
+module.exports = function (grunt) {
 
     // Configuración de Grunt
     var settings = {
         less: {
-            style: {
-                files: { //archivos a compilar
+            build: { // nombre cualquiera
+                files: { // archivos a compilar
                     "style.css": "less/style.less" // destino: origen
                 }
             }
+            // en el caso de tener otra página css para una página de login
+            /*login: {
+                files: {
+                    "login.css": "less\\login.less"
+                }
+            }*/
         },
         watch: {
             styles: {
-                files: ["less/*.less"], // observa cualquier cambio en archivos LESS
-                tasks: ["less"], // ejecuta la compilación LESS
+                files: ["less/*.less"], // observa cualqueir cambio en archivos LESS
+                tasks: ["less"], // ejecuta la compilación/tarea less
                 options: {
-                    spawn: false // para que no se quede tostado
+                    spawn: false // para que no se quede tostado (creemos)
                 }
             }
         }
@@ -23,12 +30,12 @@ module.exports = function(grunt) {
     // Cargamos configuración de Grunt
     grunt.initConfig(settings);
 
-    // Cargamos plugins (1)
+
+    // Cargamos plugins
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    // Definimos tareas disponibles para grunt-cli (2)
-    grunt.registerTask('default', ['less', 'watch']);
-    grunt.registerTask('production', ['less']);
-
-};
+    // Definimos tareas disponibles para grunt-cli
+    grunt.registerTask('default', ['less', 'watch']); //en caso de solo cargar el login--> less:login
+    //Para pasar a producción--> grunt.registerTask('production', ['less']);
+}

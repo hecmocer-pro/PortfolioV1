@@ -1,21 +1,21 @@
 {
-  "name": "musicababel",
-  "version": "1.0.0",
-  "description": "Proyecto HANDS-ON de Front-end Avanzado. Reproductor de música",
+  "name": "hecmocer.github.io",
+  "version": "0.1.0",
+  "description": "personal website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jorgegvalencia@github.com/jorgegvalencia/MusicaBabel.git"
+    "url": "git+https://github.com/hecmocer/hecmocer.github.io.git"
   },
-  "author": "jorgegvalencia, hecmocer",
+  "author": "Hecmocer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jorgegvalencia/MusicaBabel/issues"
+    "url": "https://github.com/hecmocer/hecmocer.github.io/issues"
   },
-  "homepage": "https://github.com/jorgegvalencia/MusicaBabel#readme",
+  "homepage": "https://github.com/hecmocer/hecmocer.github.io#readme",
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-less": "^1.2.0",

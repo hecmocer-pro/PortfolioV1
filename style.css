@@ -1,19 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700italic,700|Bangers|Great+Vibes);
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "bangers";
+body {
+  margin: 0;
 }
-
-body{
-    font-family: "Source Sans Pro";
-    padding: 0px;
-    margin: 0px;
+body .web.header {
+  background: aquamarine;
+  text-align: center;
+  padding-top: 50px;
 }
-
-.web.header{
-    background: aquamarine;
-}
-
-.inline{
-    display: inline;
+body .web.header .header.title {
+  margin: 0;
+  padding-bottom: 50px;
 }

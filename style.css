@@ -1,12 +1,24 @@
-body {
-  margin: 0;
-}
-body .web.header {
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Oldenburg|Open+Sans:400,700,700italic,400italic);
+.web.header {
+  font-family: 'Pacifico', cursive;
   background: aquamarine;
   text-align: center;
   padding-top: 50px;
 }
-body .web.header .header.title {
+.web.header .header.title {
   margin: 0;
   padding-bottom: 50px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oldenburg', cursive;
 }

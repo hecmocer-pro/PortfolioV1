@@ -1,18 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Oldenburg|Open+Sans:400,700,700italic,400italic);
 .web.header {
   font-family: 'Pacifico', cursive;
-  background: aquamarine;
+  font-size: 34px;
+  color: #343838;
+  background: #00DFFC;
   text-align: center;
   padding-top: 50px;
 }
-.web.header .header.title {
-  margin: 0;
+.web.header h1 {
   padding-bottom: 50px;
+}
+.web.header h1 .header.title {
+  margin: 0;
+  text-shadow: 1px 1px 1px white, 2px 2px 15px #0B486B;
+}
+.web.header h1 .header.title:hover {
+  text-shadow: 1px 1px 1px white, 3px 3px 5px #0B486B;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  margin: 0;
+  padding: 0;
 }
 h2,
 h3,

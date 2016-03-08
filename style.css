@@ -6,21 +6,46 @@
   background: #00DFFC;
   text-align: center;
   height: 220px;
-  position: fixed;
   width: 100%;
-  transition: all 0.4s ease;
 }
-.web.header h1 {
-  padding-bottom: 50px;
+.web.header .header.title {
+  padding-top: 30px;
 }
-.web.header h1 .header.title {
+.web.header .header.title .header.content {
   margin: 0;
   text-shadow: 1px 1px 1px white, 2px 2px 15px #0B486B;
   transition: text-shadow 325ms;
   text-decoration: none;
   color: inherit;
 }
-.web.header h1 .header.title:hover {
+.web.header .header.title .header.content:hover {
+  text-shadow: 1px 1px 1px white, 3px 3px 5px #0B486B;
+}
+.hide {
+  display: none;
+}
+.web.header.shrinked {
+  top: 0;
+  height: 50px;
+  position: fixed;
+  font-family: 'Pacifico', cursive;
+  font-size: 14px;
+  color: #343838;
+  background: #00DFFC;
+  text-align: center;
+  width: 100%;
+}
+.web.header.shrinked .header.title {
+  padding-top: 0;
+}
+.web.header.shrinked .header.title .header.content {
+  margin: 0;
+  text-shadow: 1px 1px 1px white, 2px 2px 15px #0B486B;
+  transition: text-shadow 325ms;
+  text-decoration: none;
+  color: inherit;
+}
+.web.header.shrinked .header.title .header.content:hover {
   text-shadow: 1px 1px 1px white, 3px 3px 5px #0B486B;
 }
 body {
@@ -41,7 +66,4 @@ h4,
 h5,
 h6 {
   font-family: 'Oldenburg', cursive;
-}
-.web.main {
-  padding-top: 220px;
 }

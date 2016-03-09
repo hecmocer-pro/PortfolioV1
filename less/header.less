@@ -22,10 +22,6 @@
     }
 }
 
-.hide{
-    display: none;
-}
-
 .web.header.shrinked{
     top: 0;
     height: 50px;
@@ -41,7 +37,7 @@
         .header.content{
             margin: 0;
             text-shadow: 1px 1px 1px white, 2px 2px 15px #0B486B;
-            transition: text-shadow 325ms;
+            transition: text-shadow 325ms, opacity 1s;
             text-decoration: none;
             color: inherit;
             &:hover{
@@ -49,4 +45,11 @@
             }
         }
     }
+}
+
+.hide{
+    opacity: 0;
+}
+.display{
+    opacity: 1;
 }

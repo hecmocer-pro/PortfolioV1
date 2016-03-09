@@ -10,11 +10,16 @@ $(window).on('scroll', function() {
 
     if ($(document).scrollTop() < 135) {
         console.log('add hide');
-
         $('.web.header.shrinked').addClass('hide');
+        $('.web.header.shrinked').removeClass('show');
+        $('.header.content.shrinked').addClass('hide');
+        $('.header.content.shrinked').removeClass('show');
     }
     else{
-        $('.web.header.shrinked').removeClass('hide');
         console.log('added hide');
+        $('.web.header.shrinked').removeClass('hide');
+        $('.web.header.shrinked').addClass('show');
+        $('.header.content.shrinked').removeClass('hide');
+        $('.header.content.shrinked').addClass('show');
     }
 });

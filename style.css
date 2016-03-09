@@ -21,9 +21,6 @@
 .web.header .header.title .header.content:hover {
   text-shadow: 1px 1px 1px white, 3px 3px 5px #0B486B;
 }
-.hide {
-  display: none;
-}
 .web.header.shrinked {
   top: 0;
   height: 50px;
@@ -41,12 +38,18 @@
 .web.header.shrinked .header.title .header.content {
   margin: 0;
   text-shadow: 1px 1px 1px white, 2px 2px 15px #0B486B;
-  transition: text-shadow 325ms;
+  transition: text-shadow 325ms, opacity 1s;
   text-decoration: none;
   color: inherit;
 }
 .web.header.shrinked .header.title .header.content:hover {
   text-shadow: 1px 1px 1px white, 3px 3px 5px #0B486B;
+}
+.hide {
+  opacity: 0;
+}
+.display {
+  opacity: 1;
 }
 body {
   margin: 0;

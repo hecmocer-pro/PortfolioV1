@@ -8,7 +8,7 @@
 $(window).on('scroll', function() {
     console.log($(document)[0].scrollingElement.scrollTop);
 
-    if ($(document).scrollTop() < 180) {
+    if ($(document).scrollTop() < 135) {
         console.log('add hide');
 
         $('.web.header.shrinked').addClass('hide');

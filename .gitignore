@@ -1,8 +1,8 @@
 # Node modules
 node_modules/
 
-# Bower components
-bower_components/
+# Bower components. Los importamos para jquery y bootstrap
+# bower_components/
 
 # Archivos del SO
 Thumbs.db

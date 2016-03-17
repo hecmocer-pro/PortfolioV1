@@ -1,3 +1,68 @@
+function get_info(){
+    $.ajax({
+        url: '/',
+        type: 'get',
+        success: function(data) {
+
+            $('#dinamic-content').load("./info.html");
+            $('#navButtonInfo').addClass('active').siblings().removeClass('active');
+            window.scrollTo(0,0);
+        },
+        error: function() {
+            $("#dinamic-content").html("Error al cargar contenido dinámico");
+        }
+    });
+}
+
+function get_viajes(){
+    $.ajax({
+        url: '/',
+        type: 'get',
+        success: function(data) {
+
+            $('#dinamic-content').load("./viajes.html");
+            $('#navButtonViaje').addClass('active').siblings().removeClass('active');
+            window.scrollTo(0,0);
+        },
+        error: function() {
+            $("#dinamic-content").html("Error al cargar contenido dinámico");
+        }
+    });
+}
+
+function get_proy(){
+    $.ajax({
+        url: '/',
+        type: 'get',
+        success: function(data) {
+
+            $('#dinamic-content').load("./proyects.html");
+            $('#navButtonProy').addClass('active').siblings().removeClass('active');
+            window.scrollTo(0,0);
+        },
+        error: function() {
+            $("#dinamic-content").html("Error al cargar contenido dinámico");
+        }
+    });
+}
+
+function get_lorem(){
+    $.ajax({
+        url: '/',
+        type: 'get',
+        success: function(data) {
+
+            $('#dinamic-content').load("./lorem.html");
+            $('#navButtonInfo').removeClass('active').siblings().removeClass('active');
+            window.scrollTo(0,0);
+        },
+        error: function() {
+            $("#dinamic-content").html("Error al cargar contenido dinámico");
+        }
+    });
+}
+
+
 $(window).on('scroll', function() {
     console.log($(document)[0].scrollingElement.scrollTop);
 
@@ -16,72 +81,18 @@ $(window).on('scroll', function() {
 });
 
 
-$(document).ready(function(){
-    $.ajax({
-        url: '/',
-        type: 'get',
-        success: function(data) {
+$(document).ready(get_lorem);
 
-            $('#dinamic-content').load("./lorem.html");
-        },
-        error: function() {
-            $("#dinamic-content").html("Error al cargar contenido dinámico");
-        }
-    });
-});
+$('.header.content').on('click', get_lorem);
 
-$('.header.content').on('click', function(){
-    $.ajax({
-        url: '/',
-        type: 'get',
-        success: function(data) {
+$('#link-info').on('click', get_info);
 
-            $('#dinamic-content').load("./lorem.html");
-        },
-        error: function() {
-            $("#dinamic-content").html("Error al cargar contenido dinámico");
-        }
-    });
-});
+$('#link-viajes').on('click', get_viajes);
 
-$('#link-info').on('click', function(){
-    $.ajax({
-        url: '/',
-        type: 'get',
-        success: function(data) {
+$('#link-proy').on('click', get_proy);
 
-            $('#dinamic-content').load("./info.html");
-        },
-        error: function() {
-            $("#dinamic-content").html("Error al cargar contenido dinámico");
-        }
-    });
-});
+$('#navButtonInfo').on('click', get_info);
 
-$('#link-viajes').on('click', function(){
-    $.ajax({
-        url: '/',
-        type: 'get',
-        success: function(data) {
+$('#navButtonViaje').on('click', get_viajes);
 
-            $('#dinamic-content').load("./viajes.html");
-        },
-        error: function() {
-            $("#dinamic-content").html("Error al cargar contenido dinámico");
-        }
-    });
-});
-
-$('#link-proy').on('click', function(){
-    $.ajax({
-        url: '/',
-        type: 'get',
-        success: function(data) {
-
-            $('#dinamic-content').load("./proyects.html");
-        },
-        error: function() {
-            $("#dinamic-content").html("Error al cargar contenido dinámico");
-        }
-    });
-});
+$('#navButtonProy').on('click', get_proy);

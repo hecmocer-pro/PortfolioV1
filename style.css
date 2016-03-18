@@ -107,9 +107,16 @@ a:visited {
 .picture-frame.proy .picture-row {
   margin: 20px;
 }
+.picture-frame.info {
+  margin-top: 40px;
+  border: solid 1px black;
+  box-shadow: 10px 10px 5px #333333;
+}
+.picture-frame.info .picture-row {
+  margin: 20px;
+}
 .img-container {
   overflow: hidden;
-  margin-bottom: 10px;
   border: solid black 1px;
 }
 .img-container .img-responsive.scalable {

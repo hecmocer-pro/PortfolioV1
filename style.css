@@ -97,12 +97,37 @@ a:visited {
   border: solid 1px black;
   box-shadow: 10px 10px 5px #333333;
 }
-.picture-frame.viaje .picture-row.viaje {
+.picture-frame.viaje .picture-row {
   margin: 20px;
 }
-.img-responsive {
+.picture-frame.proy {
+  margin-top: 40px;
+  border-bottom: solid 2px black;
+}
+.picture-frame.proy .picture-row {
+  margin: 20px;
+}
+.img-container {
+  overflow: hidden;
   margin-bottom: 10px;
+  border: solid black 1px;
+}
+.img-container .img-responsive.scalable {
+  transition: transform 750ms;
+}
+.img-container .img-responsive.scalable:hover {
+  transform: scale(1.1, 1.1);
 }
 .web.footer {
-  padding-bottom: 20px;
+  bottom: 0;
+  position: fixed;
+  background: black;
+  opacity: 0.2;
+  padding: 5px;
+}
+.web.footer:hover {
+  opacity: 1;
+}
+.dinamic-content {
+  padding-bottom: 50px;
 }

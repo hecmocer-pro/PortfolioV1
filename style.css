@@ -134,6 +134,7 @@ ul.nav-list li.nav-list-element:hover {
   margin-top: 40px;
   border: solid 1px black;
   box-shadow: 10px 10px 5px #333333;
+  margin-bottom: 40px;
 }
 .picture-frame.info .picture-row {
   margin: 20px;
@@ -184,7 +185,11 @@ ul.nav-list li.nav-list-element:hover {
   padding: 10px;
   background: radial-gradient(farthest-corner at 0% 0%, black 20%, #005F6B 70%);
 }
-.e-mail {
+.info-section {
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+.info-section .e-mail {
   font-family: pacifico;
   font-size: 32px;
   padding-top: 20px;

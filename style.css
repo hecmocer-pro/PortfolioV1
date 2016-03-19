@@ -138,3 +138,76 @@ a:visited {
 .dinamic-content {
   padding-bottom: 50px;
 }
+.icon-bg {
+  width: 250px;
+  height: 250px;
+  background: #343838;
+  border-radius: 50%;
+  border: solid grey 10px;
+}
+.icon-bg .icon-circle-one {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: aquamarine;
+  border-radius: 50%;
+  top: 5px;
+}
+.icon-bg .icon-circle-two {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #79BD9A;
+  border-radius: 50%;
+  left: -60px;
+  top: -15px;
+}
+.icon-bg .icon-circle-three {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #79BD9A;
+  border-radius: 50%;
+  left: 60px;
+  top: -75px;
+}
+.icon-bg .icon-circle-four {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: aquamarine;
+  border-radius: 50%;
+  left: -60px;
+  top: -60px;
+}
+.icon-bg .icon-circle-five {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: aquamarine;
+  border-radius: 50%;
+  left: 60px;
+  top: -120px;
+}
+.icon-bg .icon-circle-six {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #79BD9A;
+  border-radius: 50%;
+  top: -140px;
+}
+.icon-bg .icon-circle-seven {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+  top: -280px;
+}
+.icon-span {
+  position: relative;
+  top: 15px;
+  font-size: 17px;
+}

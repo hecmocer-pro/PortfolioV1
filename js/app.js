@@ -64,7 +64,6 @@ function get_lorem(){
 
 
 $(window).on('scroll', function() {
-    console.log($(document)[0].scrollingElement.scrollTop);
 
     if ($(document).scrollTop() < 130) {
         $('.web.header.shrinked').addClass('hide');
@@ -83,14 +82,23 @@ $(document).ready(get_lorem);
 
 $('.header.content').on('click', get_lorem);
 
-$('#link-info').on('click', get_info);
+$('body').on('click', '#link-info', get_info);
 
-$('#link-viajes').on('click', get_viajes);
+$('body').on('click', '#link-viajes', get_viajes);
 
-$('#link-proy').on('click', get_proy);
+$('body').on('click', '#link-proy', get_proy);
 
 $('#navButtonInfo').on('click', get_info);
 
 $('#navButtonViaje').on('click', get_viajes);
 
 $('#navButtonProy').on('click', get_proy);
+
+$.ajaxSetup({
+    beforeSend: function() {
+        $('body').addClass('loading');
+    },
+    complete: function() {
+        $('body').removeClass('loading');
+    }
+})

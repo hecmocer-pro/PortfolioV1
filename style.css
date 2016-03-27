@@ -149,6 +149,9 @@ ul.nav-list li.nav-list-element:hover {
 .img-container .img-responsive.scalable:hover {
   transform: scale(1.1, 1.1);
 }
+.img-responsive {
+  width: 100%;
+}
 .web.footer {
   bottom: 0;
   position: fixed;

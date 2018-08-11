@@ -1,6 +1,6 @@
 function get_info(){
     $.ajax({
-        url: '/',
+        url: '/PortfolioV1/',
         type: 'get',
         success: function(data) {
 
@@ -16,7 +16,7 @@ function get_info(){
 
 function get_viajes(){
     $.ajax({
-        url: '/',
+        url: '/PortfolioV1/',
         type: 'get',
         success: function(data) {
 
@@ -32,7 +32,7 @@ function get_viajes(){
 
 function get_proy(){
     $.ajax({
-        url: '/',
+        url: '/PortfolioV1/',
         type: 'get',
         success: function(data) {
 
@@ -48,7 +48,7 @@ function get_proy(){
 
 function get_lorem(){
     $.ajax({
-        url: '/',
+        url: '/PortfolioV1/',
         type: 'get',
         success: function(data) {
 

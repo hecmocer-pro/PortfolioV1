@@ -1,2 +1,2 @@
 # hecmocer.github.io
-Personal website
+The first version of my personal portfolio, built in 2016 as a static website.
